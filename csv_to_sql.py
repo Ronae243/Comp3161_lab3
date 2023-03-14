@@ -6,7 +6,7 @@ with open('Customers.csv') as csv_file:
     
     # Connect to MySQL database
     import mysql.connector
-    mydb = mysql.connector.connect(user='root', password='bfkraCtsWHi384',
+    mydb = mysql.connector.connect(user='root', password='bfk',
                                 host='localhost',
                                 database='uwi3')
     
