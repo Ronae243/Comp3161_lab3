@@ -19,9 +19,9 @@ def hello_world():
 
 
 @app.route('/customers', methods=['GET'])
-def get_students():
+def get_customers():
     try:
-        cnx = mysql.connector.connect(user='root', password='bfkra',
+        cnx = mysql.connector.connect(user='root', password='bfkraCtsWHi384',
                                 host='localhost',
                                 database='uwi3')
         cursor = cnx.cursor()
@@ -49,7 +49,7 @@ def get_students():
 @app.route('/customer/<customer_id>', methods=['GET'])
 def get_customer(customer_id):
     try:
-        cnx = mysql.connector.connect(user='root', password='bfkra',
+        cnx = mysql.connector.connect(user='root', password='bfkraCtsWHi384',
                                 host='localhost',
                                 database='uwi3')
         cursor = cnx.cursor()
@@ -78,7 +78,7 @@ def get_customer(customer_id):
 @app.route('/add_customer', methods=['POST'])
 def add_customer():
     try:
-        cnx = mysql.connector.connect(user='root', password='bfk',
+        cnx = mysql.connector.connect(user='root', password='bfkraCtsWHi384',
                                     host='localhost',
                                     database='uwi3')
         cursor = cnx.cursor()
@@ -103,7 +103,7 @@ def add_customer():
 @app.route('/update_profession/<customer_id>', methods=['PUT'])
 def update_profession(customer_id):
     try:
-        cnx = mysql.connector.connect(user='root', password='bfkr',
+        cnx = mysql.connector.connect(user='root', password='bfkraCtsWHi384',
                                         host='localhost',
                                         database='uwi3')
         cursor = cnx.cursor()
@@ -119,7 +119,7 @@ def update_profession(customer_id):
 @app.route('/highest_income_report', methods=['GET'])
 def get_highest_income_report():
     try:
-        cnx = mysql.connector.connect(user='root', password='bfk',
+        cnx = mysql.connector.connect(user='root', password='bfkraCtsWHi384',
                                 host='localhost',
                                 database='uwi3')
         cursor = cnx.cursor()
@@ -140,7 +140,7 @@ def get_highest_income_report():
 @app.route('/total_income_report', methods=['GET'])
 def get_total_income_report():
     try:
-        cnx = mysql.connector.connect(user='root', password='bfkra',
+        cnx = mysql.connector.connect(user='root', password='bfkraCtsWHi384',
                                 host='localhost',
                                 database='uwi3')
         cursor = cnx.cursor()
@@ -160,7 +160,7 @@ def get_total_income_report():
 @app.route('/average_work_experience', methods=['GET'])
 def get_average_work_experience():
     try:
-        cnx = mysql.connector.connect(user='root', password='bfkr',
+        cnx = mysql.connector.connect(user='root', password='bfkraCtsWHi384',
                                 host='localhost',
                                 database='uwi3')
         cursor = cnx.cursor()
@@ -180,7 +180,7 @@ def get_average_work_experience():
 @app.route('/average_spending_score/<profession>', methods=['GET'])
 def get_average_spending_score(profession):
     try:
-        cnx = mysql.connector.connect(user='root', password='bfk',
+        cnx = mysql.connector.connect(user='root', password='bfkraCtsWHi384',
                                 host='localhost',
                                 database='uwi3')
         cursor = cnx.cursor()
